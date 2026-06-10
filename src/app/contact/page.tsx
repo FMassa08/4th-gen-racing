@@ -7,21 +7,27 @@ export const metadata: Metadata = {
   description: "Contact 4th Gen Racing for media, archive, partnership, and collaboration inquiries."
 };
 
+const contactEmail = "info@4thgenracing.com";
+
 const contactBlocks = [
   {
     title: "Media & Story",
+    subject: "Media & Story Inquiry - 4th Gen Racing",
     text: "For interviews, editorial features, press context, and storytelling around the four-generation Massa racing dynasty."
   },
   {
     title: "Archive & Historical Material",
+    subject: "Archive & Historical Material Inquiry - 4th Gen Racing",
     text: "For historical information, family racing material, image references, and context connected to Adriano, Ademaro, Emanuele Ademaro Massa, Filippo, and the Number 6."
   },
   {
     title: "Partnerships & Collaborations",
+    subject: "Partnerships & Collaborations Inquiry - 4th Gen Racing",
     text: "For brands and collaborators interested in a project that connects Italian motorsport heritage with the next chapter of driver development."
   },
   {
     title: "General Inquiries",
+    subject: "General Inquiry - 4th Gen Racing",
     text: "For direct questions about 4th Gen Racing, the Massa story, the archive, or future project coordination."
   }
 ];
@@ -110,10 +116,16 @@ export default function ContactPage() {
           </div>
           <div className="contact-card-grid">
             {contactBlocks.map((block) => (
-              <article className="contact-card" key={block.title}>
+              <a
+                className="contact-card"
+                href={`mailto:${contactEmail}?subject=${encodeURIComponent(block.subject)}`}
+                aria-label={`${block.title}: send inquiry to 4th Gen Racing`}
+                key={block.title}
+              >
                 <h3>{block.title}</h3>
                 <p>{block.text}</p>
-              </article>
+                <span>Send inquiry</span>
+              </a>
             ))}
           </div>
         </div>
@@ -131,4 +143,6 @@ export default function ContactPage() {
     </main>
   );
 }
+
+
 

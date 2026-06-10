@@ -35,6 +35,16 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section className="legacy-statement-band">
+        <div className="container legacy-statement">
+          <p className="eyebrow">Living Dynasty</p>
+          <h2>80 Years of Uninterrupted Speed Legacy</h2>
+          <p>
+            From Adriano's first Number 6 to Filippo's modern development path, the Massa racing line has never stopped moving.
+          </p>
+        </div>
+      </section>
+
       <section className="section-pad parchment">
         <div className="container split">
           <div>
@@ -124,4 +134,5 @@ export default function HomePage() {
     </main>
   );
 }
+
 

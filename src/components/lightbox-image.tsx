@@ -44,7 +44,16 @@ export function LightboxImage({ src, alt }: { src: string; alt: string }) {
 
   return (
     <>
-      <button className="lightbox-trigger" type="button" onClick={() => setOpen(true)} aria-label={`Open image fullscreen: ${alt}`}>
+      <button
+        className="lightbox-trigger"
+        type="button"
+        onClick={(event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          setOpen(true);
+        }}
+        aria-label={`Open image: ${alt}`}
+      >
         <img src={src} alt={alt} />
       </button>
       {mounted && lightbox ? createPortal(lightbox, document.body) : null}
