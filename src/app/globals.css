@@ -392,6 +392,16 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
+.living-dynasty-title,
+.living-dynasty-copy,
+.archive-hero-title {
+  max-width: 100%;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
 .legacy-statement h2::after {
   position: absolute;
   right: -4vw;
@@ -1214,6 +1224,126 @@ p {
   .footer-nav {
     align-items: flex-start;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-hero .hero-copy {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .home-hero .hero-copy .home-hero-title {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+    font-size: clamp(2.65rem, 12vw, 3.65rem);
+    line-height: 0.92;
+    letter-spacing: -0.04em;
+  }
+
+  .legacy-statement {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .living-dynasty-title,
+  .archive-hero-title {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    justify-self: stretch;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+    letter-spacing: 0;
+  }
+
+  .living-dynasty-title {
+    font-size: clamp(2rem, 10vw, 3.4rem);
+    line-height: 1.08;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .living-dynasty-title::after {
+    right: 0;
+    left: 0;
+  }
+
+  .living-dynasty-copy {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    justify-self: stretch;
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .archive-hero-title {
+    font-size: clamp(2.25rem, 10.8vw, 3.55rem);
+    line-height: 0.98;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-hero .hero-copy .home-hero-title {
+    font-size: clamp(2.25rem, 10.9vw, 3rem);
+    line-height: 0.9;
+    letter-spacing: -0.045em;
+  }
+
+  .legacy-statement-band .legacy-statement {
+    width: min(100% - 28px, var(--max));
+    max-width: calc(100% - 28px);
+    min-width: 0;
+    justify-items: stretch;
+  }
+
+  .legacy-statement .living-dynasty-title,
+  .page-hero .hero-copy .archive-hero-title {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+    letter-spacing: -0.02em;
+  }
+
+  .legacy-statement .living-dynasty-title {
+    font-size: clamp(1.9rem, 9.4vw, 3.05rem);
+    line-height: 1.02;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .legacy-statement .living-dynasty-title::after {
+    right: 0;
+    left: 0;
+  }
+
+  .legacy-statement .living-dynasty-copy {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+  }
+
+  .page-hero .hero-copy .archive-hero-title {
+    font-size: clamp(2rem, 9.6vw, 3.1rem);
+    line-height: 0.96;
+  }
+
+  .archive-page-hero::after {
+    right: 0;
+    left: 0;
   }
 }
 

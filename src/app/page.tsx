@@ -21,7 +21,7 @@ export default function HomePage() {
         <div className="hero-wash" />
         <div className="container hero-copy">
           <p className="eyebrow">The Massa Racing Dynasty</p>
-          <h1>Four generations. One red line.</h1>
+          <h1 className="home-hero-title">Four generations. One red line.</h1>
           <p>
             4th Gen Racing is the guardian of eighty years of Massa family racing heritage: four generations connected by
             one red line, from the dawn of Italian road racing to the performance culture shaping the next chapter.
@@ -38,8 +38,8 @@ export default function HomePage() {
       <section className="legacy-statement-band">
         <div className="container legacy-statement">
           <p className="eyebrow">Living Dynasty</p>
-          <h2>80 Years of Uninterrupted Speed Legacy</h2>
-          <p>
+          <h2 className="living-dynasty-title">80 Years of Uninterrupted Speed Legacy</h2>
+          <p className="living-dynasty-copy">
             From Adriano's first Number 6 to Filippo's modern development path, the Massa racing line has never stopped moving.
           </p>
         </div>
