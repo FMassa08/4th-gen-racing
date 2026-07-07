@@ -1,0 +1,23 @@
+{
+  "name": "4th Gen Racing",
+  "short_name": "4th Gen",
+  "description": "Four generations of Massa racing heritage, the Number 6, and a living motorsport dynasty.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05070a",
+  "theme_color": "#05070a",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

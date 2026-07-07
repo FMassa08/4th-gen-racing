@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">4th Gen Racing Number 6 icon</title>
+  <desc id="desc">A gold Number 6 on a dark graphite motorsport background with a subtle red speed line.</desc>
+  <defs>
+    <linearGradient id="graphite" x1="90" y1="40" x2="420" y2="478" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#171c22"/>
+      <stop offset="0.52" stop-color="#070a0e"/>
+      <stop offset="1" stop-color="#030508"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="150" y1="78" x2="360" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff0b8"/>
+      <stop offset="0.25" stop-color="#e3b85d"/>
+      <stop offset="0.52" stop-color="#b68432"/>
+      <stop offset="0.78" stop-color="#f4d37a"/>
+      <stop offset="1" stop-color="#fff4cf"/>
+    </linearGradient>
+    <linearGradient id="redLine" x1="-20" y1="338" x2="550" y2="168" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d21f2d" stop-opacity="0"/>
+      <stop offset="0.2" stop-color="#d21f2d" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#d21f2d"/>
+      <stop offset="0.78" stop-color="#ff4a56" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#d21f2d" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="softGlow" x="-35%" y="-35%" width="170%" height="170%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0.82  0 1 0 0 0.12  0 0 1 0 0.18  0 0 0 0.62 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="86" fill="url(#graphite)"/>
+  <path d="M44 331 C146 289 239 267 467 178" fill="none" stroke="url(#redLine)" stroke-width="24" stroke-linecap="round" opacity="0.88"/>
+  <path d="M58 353 C162 305 274 270 496 210" fill="none" stroke="#f3eee6" stroke-width="4" stroke-linecap="round" opacity="0.28"/>
+  <text x="255" y="376"
+        text-anchor="middle"
+        font-family="Arial Black, Arial, Helvetica, sans-serif"
+        font-size="342"
+        font-weight="900"
+        fill="url(#gold)"
+        stroke="#fff0b8"
+        stroke-width="3"
+        paint-order="stroke fill"
+        filter="url(#softGlow)">6</text>
+  <rect x="26" y="26" width="460" height="460" rx="68" fill="none" stroke="#f4d37a" stroke-opacity="0.22" stroke-width="4"/>
+</svg>
