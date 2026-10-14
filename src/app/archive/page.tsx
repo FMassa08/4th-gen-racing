@@ -11,12 +11,12 @@ export const metadata: Metadata = {
 export default function ArchivePage() {
   return (
     <main id="top">
-      <section className="page-hero section-dark">
+      <section className="page-hero section-dark archive-page-hero">
         <img className="hero-image" src="/images/media-contact-hero-number6-collage.jpg" alt="Number 6 collage representing the Massa family competition history." />
         <div className="hero-wash" />
           <div className="container hero-copy">
             <p className="eyebrow">Archive</p>
-          <h1>Four generations. One racing line.</h1>
+          <h1 className="archive-hero-title">Four generations. One racing line.</h1>
           <p>
             From Adriano's early Italian racing years to Ademaro's touring battles, Emanuele Ademaro Massa's GT and
             touring car chapters, and Filippo's first steps into modern competition, this archive follows the cars, faces,
